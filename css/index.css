@@ -154,7 +154,7 @@ header ul li a:hover, header ul li a.active {
     color: white;
     cursor: pointer;
 }
-.content .title {
+.content .title h3 {
     font-weight: bold;
     font-size: 25px;
 }
@@ -170,16 +170,77 @@ header ul li a:hover, header ul li a.active {
 .content .information ul li span.title-1 {
     font-weight: bold;
 }
+.imgBox .skills {
+    text-align: center;
+    padding: 20px;
+}
 .imgBox .row {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .imgBox .row .square {
     width: 100px;
     height: 150px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     flex: 0 0 25%;
     margin-bottom: 30px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imgBox .row .square .progresss {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+.imgBox .row .square .progresss svg {
+    width: 7rem;
+    height: 7rem;
+}
+.imgBox .row .square .progresss svg circle {
+    stroke: #1f71a1;
+    stroke-dashoffset: -30;
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+.imgBox .row .square .progresss svg circle.html {
+    stroke-dasharray: 200;
+}
+.imgBox .row .square .progresss svg circle.css {
+    stroke-dasharray: 180;
+}
+.imgBox .row .square .progresss svg circle.js {
+    stroke-dasharray: 170;
+}
+.imgBox .row .square .progresss svg circle.MUI {
+    stroke-dasharray: 190;
+}
+.imgBox .row .square .progresss svg circle.sass {
+    stroke-dasharray: 120;
+}
+.imgBox .row .square .progresss svg circle.tailwind {
+    stroke-dasharray: 130;
+}
+.imgBox .row .square .progresss svg circle.reactjs {
+    stroke-dasharray: 210;
+}
+.imgBox .row .square .progresss svg circle.redux {
+    stroke-dasharray: 150;
+}
+.imgBox .row .square .progresss .percentage {
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 @keyframes inimate {
     0%,
@@ -303,5 +364,24 @@ header ul li a:hover, header ul li a.active {
     .icon li a {
         width: 35px;
         height: 35px;
+    }
+    .content .title h3 {
+        font-size: 20px;
+    }
+    .content .information ul {
+        font-size: 15px;
+    }
+    .imgBox .row .square {
+        flex: 0 0 20%;
+        padding: 50px;
+    }
+    .contact .address > i, .phone > i, .email > i {
+        font-size: 20px;
+    }
+    .contact .address > h4, .phone > h4, .email > h4 {
+        font-size: 16px;
+    }
+    .contact .address > p, .phone > p, .email > p {
+        font-size: 15px;
     }
 }
