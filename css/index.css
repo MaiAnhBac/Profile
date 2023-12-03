@@ -368,8 +368,8 @@ header ul li a:hover, header ul li a.active {
     .content .title h3 {
         font-size: 20px;
     }
-    .content .information ul {
-        font-size: 15px;
+    .content .information ul, .contact-imgBox p {
+        font-size: 0.7em;
     }
     .imgBox .row .square {
         flex: 0 0 20%;
@@ -382,6 +382,12 @@ header ul li a:hover, header ul li a.active {
         font-size: 16px;
     }
     .contact .address > p, .phone > p, .email > p {
-        font-size: 15px;
+        font-size: 0.8em;
+    }
+    .contact-imgBox h3 {
+        font-size: 1.2em;
+    }
+    .imgBox .row .square .tech-name h3 {
+        font-size: 1em;
     }
 }
