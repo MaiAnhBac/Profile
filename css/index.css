@@ -242,6 +242,49 @@ header ul li a:hover, header ul li a.active {
     height: 100%;
     width: 100%;
 }
+.project h2 {
+    padding: 30px;
+    text-align: center;
+}
+.project .project-ul ul li {
+    position: relative;
+    padding: 0 20px 0 60px;
+    margin: 0 0 50px;
+    list-style: none;
+}
+.project .project-ul ul li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20px;
+    bottom: 0;
+    border-left: 1px solid #333;
+}
+.project .project-ul ul li .project-icon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #ffb400;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 1;
+    color: #fff;
+}
+.project .project-ul ul li span {
+    padding: 1px 10px;
+    margin-bottom: 12px;
+    background-color: #252525;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 12px;
+}
+.project .project-ul ul li h5 {
+    font-size: 18px;
+    margin: 7px 0 10px;
+}
 @keyframes inimate {
     0%,
     100% {
@@ -347,6 +390,9 @@ header ul li a:hover, header ul li a.active {
     .icon li a {
         margin: 0 10px;
     }
+    .project h2 {
+        padding: 0;
+    }
 }
 @media screen and (max-width: 600px) {
     .container .content {
@@ -389,5 +435,17 @@ header ul li a:hover, header ul li a.active {
     }
     .imgBox .row .square .tech-name h3 {
         font-size: 1em;
+    }
+    .project h2 {
+        padding: 0;
+    }
+    .project .project-ul ul li h5 {
+        font-size: 1em;
+    }
+    .project .project-ul ul li p {
+        font-size: .8em;
+    }
+    .project .project-ul ul li .title-host {
+        font-size: 0.8em;
     }
 }
