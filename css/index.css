@@ -162,6 +162,9 @@ header ul li a:hover, header ul li a.active {
     display: flex;
     justify-content: space-between;
 }
+.content .information ul {
+    flex: 0 0 50%;
+}
 .content .information ul li {
     list-style: none;
     padding: 10px 0;
