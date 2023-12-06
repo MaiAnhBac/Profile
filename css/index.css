@@ -288,6 +288,11 @@ header ul li a:hover, header ul li a.active {
     font-size: 18px;
     margin: 7px 0 10px;
 }
+.error {
+    color: red;
+    font-size: 13px;
+    padding: 0 5px;
+}
 @keyframes inimate {
     0%,
     100% {

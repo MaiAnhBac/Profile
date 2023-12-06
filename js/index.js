@@ -31,3 +31,32 @@
 //     about.classList.remove("active")
 //     actived.classList.remove("actived")
 //   });
+function validateForm() {
+    const name = document.getElementById("in-name").value;
+    const email = document.getElementById("in-email").value;
+    const message = document.getElementById("in-message").value;
+
+  
+    document.getElementById("error-name").innerHTML = "";
+    document.getElementById("error-email").innerHTML = "";
+    document.getElementById("error-message").innerHTML = "";
+  
+    let isValid = true;
+  
+    if (name === "") {
+      document.getElementById("error-name").innerHTML = "*Name không được để trống";
+      isValid = false;
+    }
+  
+    if (email === "") {
+      document.getElementById("error-email").innerHTML = "*Email không được để trống";
+      isValid = false;
+    }
+  
+    if (message === "") {
+      document.getElementById("error-message").innerHTML = "*Message không được để trống";
+      isValid = false;
+    }
+  
+    return isValid;
+  }
