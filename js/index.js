@@ -44,17 +44,17 @@ function validateForm() {
     let isValid = true;
   
     if (name === "") {
-      document.getElementById("error-name").innerHTML = "*Name không được để trống";
+      document.getElementById("error-name").innerHTML = "*Name cannot be blank";
       isValid = false;
     }
   
     if (email === "") {
-      document.getElementById("error-email").innerHTML = "*Email không được để trống";
+      document.getElementById("error-email").innerHTML = "*Email cannot be blank";
       isValid = false;
     }
   
     if (message === "") {
-      document.getElementById("error-message").innerHTML = "*Message không được để trống";
+      document.getElementById("error-message").innerHTML = "*Message cannot be blank";
       isValid = false;
     }
   
