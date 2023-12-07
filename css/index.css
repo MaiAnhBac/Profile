@@ -456,4 +456,7 @@ header ul li a:hover, header ul li a.active {
     .project .project-ul ul li .title-host {
         font-size: 0.8em;
     }
+    .error {
+        font-size: 0.7em;
+    }
 }
