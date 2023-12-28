@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    cursor: url("../img/icons8-cat-48.png"), auto;
 }
 section {
     display: flex;
